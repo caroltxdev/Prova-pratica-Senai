@@ -1,0 +1,182 @@
+@font-face{
+    src: url(font/Cerotta\ Personal\ Use\ Only.ttf);
+    font-family: "Blink";
+}
+@font-face{
+    src: url(font/moving/Moving.ttf);
+    font-family: "Moving";;
+}
+@font-face{
+    src: url(font/iconoplastic/iconoplasticexpand.ttf);
+    font-family: "Iconic";
+}
+@font-face{
+    src: url(font/aqila/Aqila-DemoVersion-Regular.otf);
+    font-family: "Aquila";
+}
+@font-face{
+    src: url(font/amoria/AMORIA.otf);
+    font-family: "Amoria";
+}
+:root{
+    --cor0: #fcfcfc;
+    --cor0-1: #884c4c;
+    --cor0-2: #b46d6a;
+    --cor1: #e48e8b;
+    --cor0-3: #f0dfba;
+    --cor2: #f2cee9;
+    --cor3: #C7D9D2;
+    --cor4: #C1D9B0;
+    --cor5: #F2E9F1;
+    --cor6: rgba(0, 0, 0, 0.349);
+
+    --fonte: "Blink", serif;
+    --fonte2: "Moving", serif;
+    --fonte3: "Iconic", serif;
+    --fonte4: "Aquila", serif;
+    --fonte5: "Amoria", serif;
+}
+body{
+    background-image: linear-gradient(var(--cor1), var(--cor0-3));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100vw;
+}
+header{
+    /* background-color: var(--cor4); */
+    /* margin: 30px; */
+    padding: 20px;
+    font-family: var(--fonte);
+    font-size: 50px;
+    border-radius: 5px;
+    text-align: center;
+    color: var(--cor0-1);
+    font-weight: bold;
+}
+.header{
+    /* background-color: var(--cor0-2); */
+    padding: 15px;
+    border-radius: px;
+} 
+main{
+    margin: 70px;
+}
+.aboutme{
+    color: var(--cor0-1);
+    /* background-color: var(--cor0-2); */
+    padding: 25px;
+    border: solid 10px;
+    font-family: var(--fonte);
+    font-size: 20px;
+    /* box-shadow: 5px 5px 6px var(--cor6); */
+}
+.aboutme > p{
+    font-family: var(--fonte2);
+}
+img{
+    background-color: var(--cor0-1);
+    padding: 10px;
+    border-radius: 1px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    /* Para garantir que a imagem fique dentro do container .aboutme */
+    max-width: 100%;
+    height: auto;
+}
+.list-group{
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+.skills{
+    color: var(--cor0-1);
+    /* background-color: var(--cor0-2); */
+    padding: 25px;
+    border: solid 10px;
+    font-family: var(--fonte);
+    font-size: 20px;
+    box-shadow: 5px 5px 6px var(--cor6);
+}
+.list-group {
+    background-color: var(--cor0-1);
+    border-radius: 10px;
+    padding: 20px;
+}
+.projects{
+    color: var(--cor0-1);
+    /* background-color: var(--cor0-2); */
+    padding: 25px;
+    border: solid 10px;
+    font-family: var(--fonte);
+    font-size: 20px;
+    box-shadow: 5px 5px 6px var(--cor6);
+}
+.table{
+    background-color: var(--cor3);
+    border-radius: 10px;
+    padding: 20px;
+    /* Estilo para a tabela */
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 2px 2px 8px var(--cor6);
+}
+.table th, .table td {
+    border: 1px solid var(--cor0-1);
+    padding: 12px;
+    text-align: left;
+    font-family: var(--fonte);
+    color: var(--cor0-1);
+    background-color: var(--cor5);
+}
+.table th {
+    background-color: var(--cor0-1);
+    color: var(--cor0);
+    font-family: var(--fonte4);
+}
+.contact{
+    background-color: var(--cor1);
+    margin: 30px;
+    padding: 20px;
+    font-family: var(--fonte3);
+    color: var(--cor0);
+    font-size: 25px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 6px var(--cor6);
+}
+footer{
+    background-color: rgb(27, 27, 27);
+    margin: 0px;
+    padding: 20px;
+    color: var(--cor0);
+}
+button, .btn {
+    background-color: var(--cor0-2) !important;
+    color: var(--cor0) !important;
+    border: none !important;
+    padding: 12px 24px !important;
+    border-radius: 8px !important;
+    font-family: var(--fonte4), sans-serif !important;
+    font-size: 18px !important;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px var(--cor6);
+    transition: background 0.2s, color 0.2s;
+}
+button:hover, .btn:hover {
+    background-color: var(--cor0-1) !important;
+    color: var(--cor0) !important;
+}
+a{
+    text-decoration: none;
+    color: var(--cor1);
+}
+a:hover{
+    color: var(--cor0);
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 7px;
+}
